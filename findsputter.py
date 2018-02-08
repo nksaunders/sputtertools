@@ -5,7 +5,7 @@ import george
 from george import kernels
 
 
-def lcgp(fpix,ferr):
+def SputterGP(fpix,ferr):
 
     t = np.linspace(0,len(fpix),len(fpix))
     flat_ferr = np.sum(ferr.reshape((len(ferr)), -1), axis=1)
